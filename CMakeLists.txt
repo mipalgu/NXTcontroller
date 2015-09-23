@@ -135,14 +135,14 @@ include_directories(${r2d2mipal_INCLUDE_DIRS})
 # )
 
 ## Declare a cpp executable
-add_executable(nxt_driver src/nxt_driver.cpp src/nxt_interface.cpp)
+add_executable(nxt_controller src/nxt_controller.cpp src/nxt_interface.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-add_dependencies(nxt_driver ros_webots_epuck_nxt_differential_robot_generate_messages_cpp r2d2mipal)
+add_dependencies(nxt_controller ros_webots_epuck_nxt_differential_robot_generate_messages_cpp r2d2mipal)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(nxt_driver 
+target_link_libraries(nxt_controller 
    r2d2mipal
    ${LIBUSB_LIBRARY}
    ${LIBBLUETOOTH_LINKER_FLAGS} ${LIBBLUETOOTH_LIBRARY}
