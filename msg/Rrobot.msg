@@ -1,0 +1,5 @@
+Header Rrobot
+ros_webots_epuck_nxt_differential_robot/Rmotor leftMotor
+ros_webots_epuck_nxt_differential_robot/Rmotor rightMotor
+ros_webots_epuck_nxt_differential_robot/Rbutton leftButtonSwitch
+ros_webots_epuck_nxt_differential_robot/Rbutton rightButtonSwitch
